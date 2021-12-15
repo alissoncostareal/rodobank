@@ -1,0 +1,105 @@
+/* General */
+* {
+    font-family: 'Roboto';
+  }
+  
+  body {
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+  }
+  
+  header {
+    background-color: #FFF;
+    border-bottom: 1px solid #CCC;
+  }
+  
+  .row {
+    margin: 0;
+  }
+  
+  .container-fluid {
+    padding: 0;
+  }
+  
+  .btn-primary {
+    background-color: #4289f3!important;
+    border: 2px solid #083ac2!important;
+  }
+  
+  .btn-primary:hover {
+    background-color: #083ac2!important;
+    border-color: #4899e6!important;
+  }
+  
+  .msg {
+    background-color: #D4EDDA;
+    color: #155724;
+    border: 1px solid #C3E6CB;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+  }
+  
+ #info-container .already-joined-msg{
+    margin: 15px 0;
+    color: #004085;
+    background-color: #cce5ff;
+    border: 1px solid #b8daff;
+    padding: 10px;
+    width: 275px;
+  }
+  /* navbar */
+  #navbar img {
+    width: 100%;
+  }
+  
+  #navbar {
+    justify-content: space-between;
+    background-color: #FFF;
+    padding: 5px 0;
+    margin: 0px 20px;
+  }
+  
+  #navbar a {
+    font-size: 14px;
+    color: #757575;
+  }
+  
+  #navbar a:hover {
+    color: #F2A340;
+  }
+
+  .table-dark {
+    --bs-table-bg: #212529;
+    --bs-table-striped-bg: #2c3034;
+    --bs-table-striped-color: #fff;
+    --bs-table-active-bg: #373b3e;
+    --bs-table-active-color: #fff;
+    --bs-table-hover-bg: #323539;
+    --bs-table-hover-color: #fff;
+    color: #fff;
+    border-color: #373b3e;
+}
+
+/* Frete create page */
+#frete-create-container {
+  padding: 30px
+}
+
+#frete-create-container label {
+  font-weight: bold;
+}
+
+#frete-create-container input,
+#frete-create-container select,
+#frete-create-container textarea {
+  font-size: 12px;
+}
+
+td form{
+  display: inline-block;
+}
+
+
