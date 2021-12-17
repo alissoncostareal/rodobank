@@ -55,4 +55,16 @@ class FreteController extends Controller
         Frete::findOrFail($request->id)->update($request->all());
         return redirect('/')->with('msg', 'O frete foi atualizado com sucesso!');
     }
+    public function dashboard(){
+        $search = request('search');
+        if ($search) {
+            $fretes = Frete::where([
+                ['placa', 'like', '%'.$search.'%']
+            ])->get();
+        } else{
+            $fretes = Frete::all();
+        }
+        
+        return view('welcome', ['fretes' => $fretes, 'search' => $search]);
+    }
 }

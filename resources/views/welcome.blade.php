@@ -56,12 +56,20 @@
                             <td>{{date('d/m/Y', strtotime($frete->date_ini))}}</td>
                             <td>{{date('d/m/Y', strtotime($frete->date_final))}}</td>
                             <td>
+                                @auth
+
                                 <a href="/fretes/edit/{{$frete->id}}" class="btn btn-info edit-btn"><ion-icon name="create-outline"></ion-icon>   Editar</a>
                                 <form action="/fretes/{{$frete->id}}" method="POST">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="btn btn-danger delete-btn"><ion-icon name="trash-outline"></ion-icon>Deletar</button>
                                 </form>
+
+                                @endauth
+
+                                @guest
+                                    <p>Faça login para obter acesso.</p>
+                                @endguest
                             </td>
                         </tr>
                     @endforeach

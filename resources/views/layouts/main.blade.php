@@ -21,10 +21,15 @@
                     <li class="nav-item">
                         <a href="/" class="nav-link">Fretes</a>
                     </li>
-                    
+                    @auth
+
                     <li class="nav-item">
                         <a href="/fretes/create" class="nav-link">Criar Fretes</a>
                     </li>
+
+                    @endauth
+
+                    @guest
 
                     <li class="nav-item">
                         <a href="/login" class="nav-link">Entrar</a>
@@ -33,10 +38,17 @@
                         <a href="/register" class="nav-link">Cadastrar</a>
                     </li>
 
+                    @endguest
+                    @auth
+
                     <li class="nav-item">
-                        <a href="/" class="nav-link">Sair</a>
+                        <form action="/logout" method="POST">
+                            @csrf
+                            <a href="/logout" class="nav-link" onclick="event.preventDefault();
+                            this.closest('form').submit();">Sair</a>
+                        </form>
                     </li>
-                    
+                    @endauth                    
                 </ul>
                 
             </div>
