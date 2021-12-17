@@ -1,7 +1,7 @@
 
 ## Sobre o projeto em Laravel
 
--Para usar este projeto é necessário importar o banco de dados que estará na raíz do projeto.
+-Para usar este projeto é necessário importar o banco de dados que estará na raíz do projeto e criar um usuário na opção 'cadastrar' no menu do sistema, os dados do banco estão no final do README.
 
 -Desenvolvi o Back e Front usando Laravel e Bootstrap, ion icon e otimizações com extends;
 
